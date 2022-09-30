@@ -119,11 +119,16 @@ ul{
     transform: scale(1.2);
 }
 
+#storyboard{
+    width: 90%;
+}
+
+
 .full-img{
     position: absolute;
-    height: 70%;
+    height: 60%;
     top: 20%;
-    left: 40%;
+    left: 45%;
     transform: (translate(-50%, -50%)scale(0.5));
     transition: all 0.25s ease-out;
 
@@ -155,9 +160,15 @@ ul{
 .model p{
     color: white;
     font-size: 2rem;
+    font-weight: bold;
     position: absolute;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
     bottom: 1%;
-    left: 47%;
+    left: 46%;
     transform: (translate(-50%, -1%));
+}
+
+.figma-prototype{
+    text-align: center;
+    overflow: none;
 }
