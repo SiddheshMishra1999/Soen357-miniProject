@@ -72,6 +72,8 @@ ul{
     max-width: 80%;    
 }
 
+/*------------------------------------- Color Palette -----------------------------------*/
+
 .colors{
     border-radius: 0.5rem;
     cursor: pointer;
@@ -83,6 +85,9 @@ ul{
     transform: scale(1.05);
     transition-duration: 500ms;
 }
+
+/* --------------------------------------Old Palette--------------------------------------- */
+
 #darkgreen:hover {
     transition: transform .2s ease-in;
     box-shadow: 0 4px 2px -2px #31525b, 0 6px 20px 0 rgb(44, 145, 173);
@@ -99,6 +104,80 @@ ul{
     transition: transform .2s ease-in;
     box-shadow: 0 4px 2px -2px #fae6b1, 0 6px 20px 0 #fae6b1;
 }
+
+/* --------------------------------------New Palette--------------------------------------- */
+.colors2{
+    border-radius: 0.5rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: auto;
+}
+.colors2:hover{
+    transform: scale(1.05);
+    transition-duration: 500ms;
+}
+#white:hover{
+    transition: transform .2s ease-in;
+    box-shadow: 0 4px 2px -2px #fff, 0 6px 20px 0 #fff;
+}
+#darkbeige:hover{
+    transition: transform .2s ease-in;
+    box-shadow: 0 4px 2px -2px #FFD29E, 0 6px 20px 0 #FFD29E;
+
+}
+#darkorange:hover{
+    transition: transform .2s ease-in;
+    box-shadow: 0 4px 2px -2px #F38D1F, 0 6px 20px 0 #F38D1F;
+
+}
+#black:hover{
+    transition: transform .2s ease-in;
+    box-shadow: 0 4px 2px -2px #000000, 0 6px 20px 0 #000000;
+
+}
+
+/* Color Theme Swatches in Hex */
+.My-Color-Theme-1-hex { color: #FFFFFF; }
+.My-Color-Theme-2-hex { color: #FFD29E; }
+.My-Color-Theme-3-hex { color: #F38D1F; }
+.My-Color-Theme-4-hex { color: #000000; }
+.My-Color-Theme-5-hex { color: #FF0000; }
+
+/* Color Theme Swatches in RGBA */
+.My-Color-Theme-1-rgba { color: rgba(255, 255, 255, 1); }
+.My-Color-Theme-2-rgba { color: rgba(255, 210, 158, 1); }
+.My-Color-Theme-3-rgba { color: rgba(243, 141, 31, 1); }
+.My-Color-Theme-4-rgba { color: rgba(0, 0, 0, 1); }
+.My-Color-Theme-5-rgba { color: rgba(255, 0, 0, 1); }
+
+/* Color Theme Swatches in HSLA */
+.My-Color-Theme-1-hsla { color: hsla(0, 0, 100, 1); }
+.My-Color-Theme-2-hsla { color: hsla(32, 100, 80, 1); }
+.My-Color-Theme-3-hsla { color: hsla(31, 89, 53, 1); }
+.My-Color-Theme-4-hsla { color: hsla(0, 0, 0, 1); }
+.My-Color-Theme-5-hsla { color: hsla(0, 100, 50, 1); }
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+
+/*------------------------------------- Selina User Journey -----------------------------------*/
+#Selina-user-journey-full{
+
+    height: 80%;
+    top: 5%;
+    left: 20%;
+
+}
+#Selina-user-journey-cap{
+    margin-bottom: 1%;
+}
+/* -------------------------------------------------------------------------------------------- */
+
+/*------------------------------------- Image zoom -----------------------------------*/
 
 .gallery{
     display: grid;
@@ -133,7 +212,6 @@ ul{
     transition: all 0.25s ease-out;
 
 }
-
 .full-img.open{
     transform: (translate(-50%, -50%)scale(1));
     
@@ -167,6 +245,7 @@ ul{
     left: 46%;
     transform: (translate(-50%, -1%));
 }
+/* -------------------------------------------------------------------------------------------- */
 
 .figma-prototype{
     text-align: center;
