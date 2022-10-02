@@ -10,8 +10,15 @@ h2{
 
 
 p{
+    font-family: 'Co';
+    font-size: 110%;
+}
+
+a{
     font-family: 'Calibri';
     font-size: 110%;
+    color: white;
+    
 }
 
 body{
@@ -36,6 +43,9 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
+
+/*------------------------------------- Nav bar -----------------------------------*/
+
 ul{
     list-style-type: none;
     margin: 0;
@@ -45,18 +55,18 @@ ul{
     width: 250px;
 }
 .nav{
-    margin-top: 2.5%;
+    margin-top: 5px;
     white-space: nowrap;
     position: fixed;
     justify-content: space-between;
 }
 .nav a{
-    padding: 10px 8px 6px 16px;
     z-index:999;
     text-decoration: none;
     color: white;
     display: flex;
     flex-direction: column;
+    top: 50%;
     transition: transform .3s ease-in;
 }
 
@@ -71,6 +81,8 @@ ul{
     color: white;
     max-width: 80%;    
 }
+/* -------------------------------------------------------------------------------------------- */
+
 
 /*------------------------------------- Color Palette -----------------------------------*/
 
@@ -138,33 +150,32 @@ ul{
 
 }
 
-/* Color Theme Swatches in Hex */
-.My-Color-Theme-1-hex { color: #FFFFFF; }
-.My-Color-Theme-2-hex { color: #FFD29E; }
-.My-Color-Theme-3-hex { color: #F38D1F; }
-.My-Color-Theme-4-hex { color: #000000; }
-.My-Color-Theme-5-hex { color: #FF0000; }
 
-/* Color Theme Swatches in RGBA */
-.My-Color-Theme-1-rgba { color: rgba(255, 255, 255, 1); }
-.My-Color-Theme-2-rgba { color: rgba(255, 210, 158, 1); }
-.My-Color-Theme-3-rgba { color: rgba(243, 141, 31, 1); }
-.My-Color-Theme-4-rgba { color: rgba(0, 0, 0, 1); }
-.My-Color-Theme-5-rgba { color: rgba(255, 0, 0, 1); }
-
-/* Color Theme Swatches in HSLA */
-.My-Color-Theme-1-hsla { color: hsla(0, 0, 100, 1); }
-.My-Color-Theme-2-hsla { color: hsla(32, 100, 80, 1); }
-.My-Color-Theme-3-hsla { color: hsla(31, 89, 53, 1); }
-.My-Color-Theme-4-hsla { color: hsla(0, 0, 0, 1); }
-.My-Color-Theme-5-hsla { color: hsla(0, 100, 50, 1); }
+/* -------------------------------------------------------------------------------------------- */
+/*-------------------------------------Survey -----------------------------------*/
+#Questions{
+    width: 250%;
+}
+#Questions-full{
+    left: 20% !important;
+}
 
 
+
+
+/* -------------------------------------------------------------------------------------------- */
+/*------------------------------------- Personas -----------------------------------*/
+.persona-1, .persona-2{
+    width: 250%;
+}
 
 /* -------------------------------------------------------------------------------------------- */
 
 
 /*------------------------------------- Selina User Journey -----------------------------------*/
+#Selina-user-journey{
+    width: 250%;
+}
 #Selina-user-journey-full{
 
     height: 80%;
@@ -177,11 +188,87 @@ ul{
 }
 /* -------------------------------------------------------------------------------------------- */
 
+/*------------------------------------- Storyboard -----------------------------------*/
+
+#storyboard{
+    width: 250%;
+}
+
+#storyboard-full{
+    margin-left: -52% !important;
+}
+/* -------------------------------------------------------------------------------------------- */
+
+
+/*------------------------------------- Sketches -----------------------------------*/
+#sketches{
+    width: 50%;
+}
+
+#sketches-pics-full{
+
+    height: 80%;
+    top: 5%;
+    left: 10%;
+
+}
+/* -------------------------------------------------------------------------------------------- */
+
+
+/*------------------------------------- Wireframes -----------------------------------*/
+#wireFrame{
+    width: 50%;
+}
+
+#sketches-pics-full{
+
+    height: 80%;
+    top: 5%;
+    left: 10%;
+
+}
+/* -------------------------------------------------------------------------------------------- */
+/*------------------------------------- Typography -----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap');
+
+.fonts{
+    font-size: 20px;
+}
+.comforta-light{
+    font-family: 'Comfortaa';
+}
+.work-sans{
+    font-family:  'Work Sans', sans-serif;;
+}
+.lexend-exa{
+    font-family: 'Lexend Exa', sans-serif;;
+}
+/* -------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------Mock up--------------------------------------- */
+
+#mockup{
+    width: 50%;
+
+}
+
+#mockup1-full{
+    left: 70% !important;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
 /*------------------------------------- Image zoom -----------------------------------*/
 
 .gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
 }
 .image-container{
@@ -198,16 +285,14 @@ ul{
     transform: scale(1.2);
 }
 
-#storyboard{
-    width: 90%;
-}
+
 
 
 .full-img{
     position: absolute;
-    height: 60%;
-    top: 20%;
-    left: 45%;
+    height: 70%;
+    top: 10%;
+    left: 40% !important;
     transform: (translate(-50%, -50%)scale(0.5));
     transition: all 0.25s ease-out;
 
@@ -228,6 +313,7 @@ ul{
     opacity: 0;
     pointer-events: none;
     transition: 0.25s ease-out;
+    
 }
 
 .model.open{
@@ -250,4 +336,10 @@ ul{
 .figma-prototype{
     text-align: center;
     overflow: none;
+}
+
+footer{
+    padding-top: 5%;
+    text-align: center;
+    color: #fff;
 }
